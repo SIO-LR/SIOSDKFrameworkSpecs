@@ -28,10 +28,9 @@ Pod::Spec.new do |spec|
   spec.source       = { :http => "https://suntio-ios-sdk.s3.eu-central-1.amazonaws.com/SIOSDKFramework-1.0.0.zip", :flatten => false }
 
   spec.vendored_frameworks = 'SIOSDKFramework.xcframework'
-  # spec.swift_version = '5.3'
   spec.ios.deployment_target = '15.5'
 
-  # spec.dependency 'GoogleMLKit/TextRecognition'
+  spec.dependency 'GoogleMLKit/TextRecognition'
 
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
