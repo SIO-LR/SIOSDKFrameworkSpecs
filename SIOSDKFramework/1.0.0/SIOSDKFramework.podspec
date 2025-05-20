@@ -32,6 +32,7 @@ Pod::Spec.new do |spec|
 
   spec.dependency 'GoogleMLKit/TextRecognition'
   spec.dependency 'OpenSSL-Universal', '1.1.1900'
+  spec.dependency 'JOSESwift', '~> 3.0'
 
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
