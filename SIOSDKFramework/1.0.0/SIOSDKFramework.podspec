@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
 
   spec.license = {
       :type => 'Proprietary',
-      :file => 'SIOSDKFramework/LICENSE'
+      :file => 'LICENSE'
   }
 
   spec.author             = { "SIO-LR" => "edi@lendrise.com" }
