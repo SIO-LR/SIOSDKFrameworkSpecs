@@ -2,25 +2,20 @@ Pod::Spec.new do |spec|
 
   spec.name         = "SIOSDKFramework"
   spec.version      = "1.0.0"
-  spec.summary      = "A logn description of SIOSDKFramework. what"
+  spec.summary      = "This SDK is used by the KYC (Know Your Customer) flow, giving the option to validate a user's identity with electronic identity documents via NFC."
 
   spec.description  = <<-DESC
-  some simple description longer than the ducking summary
+  This SDK is used by the integrating applications of the sunt.io KYC (Know Your Customer)
+  flow to provide the ability to read electronic identity documents in order for the user to be able to proceed with the identification process.
                    DESC
 
   spec.homepage     = "https://sunt.io"
 
   spec.license = {
-      :type => 'MIT',
-      :text => <<-LICENSE
-  MIT License
-  
-  Copyright (c) 2025 SIO-LR
-  
-  Permission is hereby granted, free of charge, to any person obtaining a copy...
-      LICENSE
-    }
-  
+      :type => 'Proprietary',
+      :file => 'SIOSDKFramework/LICENSE'
+  }
+
   spec.author             = { "SIO-LR" => "edi@lendrise.com" }
   spec.platform     = :ios, "15.5"
 
@@ -31,7 +26,8 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '15.5'
 
   spec.dependency 'GoogleMLKit/TextRecognition'
-  spec.dependency 'OpenSSL-Universal', '1.1.1900'
+  # spec.dependency 'GoogleMLKit/ObjectDetection', '8.0.0'
+  spec.dependency 'OpenSSL-Universal', '1.1.2301'
   spec.dependency 'JOSESwift', '~> 3.0'
 
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
